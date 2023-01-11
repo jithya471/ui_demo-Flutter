@@ -143,7 +143,7 @@ class _PomegranateState extends State<Pomegranate> {
                 children: [
                   Container(
                     margin: EdgeInsets.only(top: 110),
-                    height: 500,
+                    // height: 500,
                     width: double.infinity,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.only(
@@ -225,7 +225,7 @@ class _PomegranateState extends State<Pomegranate> {
                                                       FontWeight.bold),
                                             ),
                                             SizedBox(
-                                              width: 120,
+                                              width: 122,
                                             ),
                                             Text(
                                               '6%',
@@ -322,7 +322,7 @@ class _PomegranateState extends State<Pomegranate> {
                                                       FontWeight.bold),
                                             ),
                                             SizedBox(
-                                              width: 130,
+                                              width: 134,
                                             ),
                                             Text(
                                               '45%',
@@ -348,7 +348,104 @@ class _PomegranateState extends State<Pomegranate> {
                                           barRadius: Radius.circular(10),
                                         ),
                                       ),
-                                      
+                                      Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Row(
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: Text('Total Fat',
+                                                  style: TextStyle(
+                                                      fontWeight:
+                                                          FontWeight.bold)),
+                                            ),
+                                            SizedBox(
+                                              width: 5,
+                                            ),
+                                            Text(
+                                              '5g',
+                                              style: TextStyle(
+                                                  color: Colors.grey,
+                                                  fontSize: 15,
+                                                  fontWeight:
+                                                      FontWeight.bold),
+                                            ),
+                                            SizedBox(
+                                              width: 153,
+                                            ),
+                                            Text(
+                                              '45%',
+                                              style: TextStyle(
+                                                  color: Colors.grey,
+                                                  fontSize: 15,
+                                                  fontWeight:
+                                                      FontWeight.bold),
+                                              textAlign: TextAlign.right,
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding:
+                                            EdgeInsets.symmetric(horizontal: 8),
+                                        child: LinearPercentIndicator(
+                                          width: 260,
+                                          lineHeight: 5.0,
+                                          percent: 0.05,
+                                          backgroundColor: Colors.grey,
+                                          progressColor: Colors.red,
+                                          barRadius: Radius.circular(10),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Row(
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: Text('Vitamin C',
+                                                  style: TextStyle(
+                                                      fontWeight:
+                                                          FontWeight.bold)),
+                                            ),
+                                            SizedBox(
+                                              width: 5,
+                                            ),
+                                            Text(
+                                              '2.9mg',
+                                              style: TextStyle(
+                                                  color: Colors.grey,
+                                                  fontSize: 15,
+                                                  fontWeight:
+                                                      FontWeight.bold),
+                                            ),
+                                            SizedBox(
+                                              width: 123,
+                                            ),
+                                            Text(
+                                              '1.7%',
+                                              style: TextStyle(
+                                                  color: Colors.grey,
+                                                  fontSize: 15,
+                                                  fontWeight:
+                                                      FontWeight.bold),
+                                              textAlign: TextAlign.right,
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding:
+                                            EdgeInsets.symmetric(horizontal: 8),
+                                        child: LinearPercentIndicator(
+                                          width: 260,
+                                          lineHeight: 5.0,
+                                          percent: 0.30,
+                                          backgroundColor: Colors.grey,
+                                          progressColor: Colors.red,
+                                          barRadius: Radius.circular(10),
+                                        ),
+                                      ),
                                     ],
                                   )
                                 ],
